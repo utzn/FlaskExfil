@@ -43,4 +43,4 @@ if __name__ == '__main__':
     # To run this, you'll need a SSL certificate
     # Generate a self-signed certificate using OpenSSL or get one from Let's Encrypt
     context = ('path_to_cert.pem', 'path_to_key.pem')
-    app.run(host='0.0.0.0', port=443, ssl_context=None, threaded=True, debug=True)
+    app.run(host='0.0.0.0', port=443, ssl_context=context, threaded=True, debug=True)
